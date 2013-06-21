@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ============================================================================================================================
+== BUBBLE CITAÇÃO INCIO
+** ============================================================================================================================ */
+.triangle-isosceles {
+	  padding: 16px;
+    position: relative;
+	height: 410px;
+    left: 242px;
+    top: 14px;
+    width: 721px;
+	color:#FFFFFF;
+	background:#5a0e5f; /* default background for browsers without gradient support */
+	/* css3 */
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#7d2183), to(#5a0e5f));
+	background:-moz-linear-gradient(#7d2183, #5a0e5f);
+	background:-o-linear-gradient(#7d2183, #5a0e5f);
+	background:linear-gradient(#7d2183, #5a0e5f);
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	border-radius:0px;
+	font-size: 25px;
+   font-family: 'DIN Regular', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height:29px;
+}
+
+/* Variant : for top positioned triangle
+------------------------------------------ */
+
+.triangle-isosceles.top {
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f3961c), to(#f9d835));
+	background:-moz-linear-gradient(#f3961c, #f9d835);
+	background:-o-linear-gradient(#f3961c, #f9d835);
+	background:linear-gradient(#f3961c, #f9d835);
+}
+
+/* Variant : for left/right positioned triangle
+------------------------------------------ */
+
+.triangle-isosceles.left {
+	margin-left:50px;
+	background:#f3961c;
+}
+
+/* Variant : for right positioned triangle
+------------------------------------------ */
+
+.triangle-isosceles.right {
+	margin-right:50px;
+	background:#f3961c;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+/* creates triangle */
+.triangle-isosceles:after {
+	content:"";
+	position:absolute;
+	bottom:-15px; /* value = - border-top-width - border-bottom-width */
+	    left: 698px;/* controls horizontal position */
+	border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:#5a0e5f transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+.triangle-isosceles.top:after {
+	top:-15px; /* value = - border-top-width - border-bottom-width */
+	right:50px; /* controls horizontal position */
+	bottom:auto;
+	left:auto;
+	border-width:0 15px 15px; /* vary these values to change the angle of the vertex */
+	border-color:#f3961c transparent;
+}
+
+/* Variant : left
+------------------------------------------ */
+
+.triangle-isosceles.left:after {
+	top:16px; /* controls vertical position */
+	left:-50px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+	border-width:10px 50px 10px 0;
+	border-color:transparent #f3961c;
+}
+
+/* Variant : right
+------------------------------------------ */
+
+.triangle-isosceles.right:after {
+	top:16px; /* controls vertical position */
+	right:-50px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+    left:auto;
+	border-width:10px 0 10px 50px;
+	border-color:transparent #f3961c;
+}
+/* ============================================================================================================================
+== BUBBLE CITAÇÃO FINAL
+** ============================================================================================================================ */
+
+
+code{
+   display: block;
+   margin: 6px 10px 8px 0;
+   padding: 2px 30px 2px 15px;
+   overflow: hidden;
+   
+   font-family: monospace;
+   line-height: 17px;
+   white-space: pre;
+   text-align: left;
+   
+   border: 1px solid #6699CC;
+   border-width: 1px 1px 1px 15px;
+   
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   
+   background-color: #f7f7f7;
+}
+
+   code span{ color: #4CC744; font-style: italic; }
+   code var{ color: #6699CC; font-style: normal; }
+   code samp{ color: #CC0066; font-style: normal; text-decoration: none; }
+   code dfn{ color: #FF7C0A; font-style: normal; text-decoration: none; }
+
+   code.css var{ color: #FF7C0A; }
+   code.css dfn{ color: purple; }
+
+

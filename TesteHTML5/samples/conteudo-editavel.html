@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset=utf-8>
+		<meta name='viewport' content='width=620'>
+		<title>HTML5 Demo: ContentEditable</title>
+		<link rel='stylesheet' href='css/html5demos.css'>
+		<script src='js/h5utils.js'></script>
+	</head>
+	<body>
+
+		<header>
+			<h1>HTML5 para Conteudo editavel....</h1>
+		</header>
+
+		<article>
+			<section id='editable' contenteditable='true'>
+				<h2>Altere o conteudo!!!</h2>
+				<p>
+					Blablablabla
+				</p>
+				<ol>
+					<li>
+						mais blablabla
+					</li>
+					<li>
+						mais blablabla
+					</li>
+					<li>
+						mais blablabla
+					</li>
+				</ol>
+			</section>
+			<div>
+				<input type='button' id='clear' value='Limpar alteracoes' />
+			</div>
+		</article>
+		<script>
+			var editable = document.getElementById('editable');
+
+			addEvent(editable, 'blur', function() {
+				// lame that we're hooking the blur event
+				localStorage.setItem('contenteditable', this.innerHTML);
+				document.designMode = 'off';
+			});
+
+			addEvent(editable, 'focus', function() {
+				document.designMode = 'on';
+			});
+
+			addEvent(document.getElementById('clear'), 'click', function() {
+				localStorage.clear();
+				window.location = window.location;
+				// refresh
+			});
+
+			if (localStorage.getItem('contenteditable')) {
+				editable.innerHTML = localStorage.getItem('contenteditable');
+			}
+		</script>
+	</body>
+</html>

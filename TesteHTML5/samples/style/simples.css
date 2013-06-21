@@ -1,0 +1,170 @@
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #divPrincipal{
+		z-index: 1;
+      }
+      
+      #canvasPagina{
+		z-index: 10;
+		background-color: red;
+		padding-left: 0;
+	    padding-right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+      }
+      
+      #divControlesNavegacao{
+		z-index: 11;
+	  }
+      
+     #divControlesPaginacao{
+		z-index: 11;
+	  }
+      
+     #divControlesZoom{
+		z-index: 11;
+	  }
+      
+     .controle {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 40px;
+		position: inherit;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+		cursor: pointer;
+		font-size: large;
+	}
+	
+	.paginacao {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+		font-size: large;
+		position: inherit;
+		left: 50px;
+	}
+      
+      #divLink{
+      	position:absolute;
+		bottom: 10px;
+		right: 10px;
+      }
+      
+      .center{
+		padding-left: 0;
+	    padding-right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	  }
+	  #iframe_a{
+	  	border: none;
+	  	display: none;
+	  }
+	  .modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+	
+	.modalDialog > div {
+		width: 500px;
+		height: 50%;
+		position: relative;
+		margin: 2% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	}
+	.close, .zoomIFrameIn, .zoomIFrameOut {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+	
+	.close {
+		top: -10px;
+		right: -12px;
+		width: 24px;
+	}
+	
+	.zoomIFrameIn {
+		top: 50px;
+		right: -12px;
+		width: 24px;
+	}
+	
+	.zoomIFrameOut {
+		top: 100px;
+		right: -12px;
+		width: 24px;
+	}
+
+	.close:hover , .zoomIFrame:hover, { 
+		background: #00d9ff; 
+	}
+	
+	#iframe_a {
+		height: 100%; 
+		width: 100%; 
+		display: block;
+	}
+	
+    #divContainer {
+    	height: 90%; 
+    	width: 90%; 
+    	
+    }
+    
+	#divOED {
+		position: absolute;
+	}
+	
+	#divConteudo{
+		border:2px solid;
+		border-radius:25px;
+	}

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #div1{
+      	position:fixed;
+		top:30px;
+		left:5px;
+      }
+      #divCanvas1{
+		z-index: 1;
+      }
+      #divCanvas{
+      	position:fixed;
+		top:30px;
+		left:5px;
+		background-color: blue;
+      }
+      #divLink{
+      	position:absolute;
+		bottom: 10px;
+		right: 10px;
+      }
+      
+      .center{
+		margin-left:auto;
+		margin-right:auto;
+		width:1024px;
+		height: 768px;
+		background-color:red;
+	  }
+	  #iframe_a{
+	  	border: none;
+	  	display: none;
+	  }
+	  .modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+	
+	.modalDialog > div {
+		width: 500px;
+		height: 50%;
+		position: relative;
+		margin: 2% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	}
+	.close, .zoomIFrameIn, .zoomIFrameOut {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+	
+	.close {
+		top: -10px;
+	}
+	
+	.zoomIFrameIn {
+		top: 50px;
+	}
+	
+	.zoomIFrameOut {
+		top: 100px;
+	}
+
+	.close:hover , .zoomIFrame:hover{ 
+		background: #00d9ff; 
+	}
+	
+	#iframe_a {
+		height: 50%; 
+		width: 50%; 
+		display: block;
+	}
+	
+    #container {
+    	height:80%; 
+    	width: 80%; 
+    	min-height: 550px;
+    }
+      
+    </style>
+  </head>
+  <body>
+  	<div id="divCanvas1" class="center">
+  		<span id="img1" style="cursor: move;">Image1</span>
+    	<span id="img2" style="cursor: move;">Image2</span>
+    	<span id="zoom1" style="cursor: move;">Zomm +</span>
+    	<span id="zoom2" style="cursor: move;">Zomm -</span>
+    	
+    	<canvas id="myCanvas" width="1480" height="2048">
+     	    Browser não suporta Canvas!!!
+     	</canvas>
+    </div>
+    
+    <a href="#openModal" onclick="loadIFrame();">Open Modal</a>
+	
+	<div id="openModal" class="modalDialog" >
+		<div id="container">
+			<a href="#close" title="Close" class="close">X</a>
+			<a id="zoomIFrameIn" title="ZoomIn" class="zoomIFrameIn">Z In</a>
+			<a id="zoomIFrameOut" title="ZoomOut" class="zoomIFrameOut">Z Out</a>
+			<iframe src="" name="iframe_a" id="iframe_a" class="center">Browser não suporta iFrames!!!</iframe>
+		</div>
+	</div>
+	
+    <script>
+    
+	    if (typeof(Storage)!=="undefined") {
+	  		//alert(localStorage.page);
+		} else {
+	  		alert("storage não ok neste browser");
+	  	}
+
+    	var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+  		var imageObj = new Image();
+  		var imgDefaultWidth = 740;
+  		var imgDefaultHeight = 1004;
+  		
+      document.getElementById("divCanvas1").onclick=function(){
+      	var display = document.getElementById("iframe_a").style.display;
+      	if(display == 'block')
+      		document.getElementById("iframe_a").style.display = 'none';
+      	else
+      		document.getElementById("iframe_a").style.display = 'block';
+      	};
+      	
+      document.getElementById("img1").onclick=function(){
+      	imageObj = null;
+      	imageObj = new Image();
+  		imageObj.onload = function() {
+    		context.drawImage(imageObj, 0, 0, imgDefaultWidth, imgDefaultHeight);
+ 		};
+ 		
+  		imageObj.src = 'images/s10_p1.jpg';
+  		localStorage.page = "pagina 1";
+      };
+      
+      document.getElementById("img2").onclick=function(){
+      	imageObj = null;
+      	imageObj = new Image();
+      	imageObj.onload = function() {
+    		context.drawImage(imageObj, 0, 0, imgDefaultWidth, imgDefaultHeight);
+ 		};
+ 		
+  		imageObj.src = 'images/s12_p1.jpg';
+  		localStorage.page = "pagina 2";
+      };
+      
+      document.getElementById("zoom1").onclick=function(){
+      	context.scale(2,2);
+      	context.drawImage(imageObj, 0, 0, imgDefaultWidth, imgDefaultHeight);
+      };
+      
+      document.getElementById("zoom2").onclick=function(){
+      	context.clearRect ( 0 , 0 , imgDefaultWidth , imgDefaultHeight );
+      	context.scale(0.5,0.5);
+      	context.drawImage(imageObj, 0, 0, imgDefaultWidth, imgDefaultHeight);
+      };
+      
+      function loadIFrame(){
+      	 document.getElementById("iframe_a").src = "http://www.knowlodge.com.br";
+      }
+      
+      document.getElementById("zoomIFrameIn").onclick=function(){
+      	document.getElementById("iframe_a").style.width = '100%';
+      	document.getElementById("iframe_a").style.height = '100%';
+      };
+      
+      document.getElementById("zoomIFrameOut").onclick=function(){
+      	document.getElementById("iframe_a").style.width = '80%';
+      	document.getElementById("iframe_a").style.height = '80%';
+      	
+      };
+    </script>
+  </body>
+</html>

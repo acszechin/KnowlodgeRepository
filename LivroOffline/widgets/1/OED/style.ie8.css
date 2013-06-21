@@ -1,0 +1,41 @@
+/* Editora do Brasil*/
+
+
+.preview {
+	width:635px;
+	float:left;
+	height:358px;
+	padding:14px 14px 0 14px;
+	background:#007973 url(images/seta.jpg) repeat-y right -145px;
+	}
+.preview-link1 {
+	width:635px;
+	float:left;
+	height:358px;
+	padding:14px 14px 0 14px;
+	background:#007973 url(images/seta.jpg) repeat-y right -45px;
+	}
+.preview-link2 {
+	width:635px;
+	float:left;
+	height:358px;
+	padding:14px 14px 0 14px;
+	background:#007973 url(images/seta.jpg) repeat-y right 138px;
+	}
+	
+
+#content-article .botao-article {
+	width:310px;
+	text-align:center;
+	font-size:24px;
+	text-decoration:none;
+	color:#ffffff;
+	display:block;
+	float:right;
+	padding:67px 0 67px 0;
+	margin:0 10px 20px 0;
+	background-color:#009089;
+}
+#content-article .botao-article:hover {
+	background-color:#007973;
+}

@@ -1,0 +1,474 @@
+@media screen and (max-width: 758px) {
+	#fazenda {
+	height: 50%;
+	margin-bottom: -57px;
+	margin-top: 7px;
+	width: 95%;
+	margin-left: 18px;
+	border-radius: 11px;
+}
+
+#botmenu1 {
+    left: 502px;
+    position: absolute;
+    top: 183px;
+}
+#botmenu2 {
+    left: 21px;
+    position: absolute;
+    top: 8px;
+}
+#botmenu3 {
+    left: 21px;
+    position: absolute;
+    top: 146px;
+}
+#botmenu4 {
+    left: 22px;
+    position: absolute;
+    top: 323px
+}
+#botmenu5 {
+    left: 345px;
+    position: absolute;
+    top: 276px;
+}
+#botmenu6 {
+	left: 346px;
+	position: absolute;
+	top: 457px;
+	width: 193px;
+	height: 170px;
+}
+
+#botmenu6a {
+	left: 524px;
+	position: absolute;
+	top: 382px;
+	width: 266px;
+	height: 201px;
+}
+#botmenu6b{
+	left: 699px;
+	position: absolute;
+	top: 343px;
+	width: 166px;
+	height: 117px;
+}
+
+#img-conteudo1 {
+    height: 300px;
+    margin-bottom: -57px;
+    margin-top: 7px;
+    width: 95%;
+    margin-left: 29px;
+    border-radius: 11px;
+}
+
+#img-conteudo-right1 {
+    margin-bottom: -57px;
+    margin-left: 457px;
+    margin-top: -85px;
+}
+
+
+#menu2foto {
+    margin-left: 45px;
+    margin-top: 25px;
+}
+
+
+#comentfoto-med {
+    margin-top: 162px;
+    margin-bottom: -73px;
+    width: 804px;
+    margin-left: 30px;
+}
+
+#comentfoto-big {
+    margin-top: 162px;
+    margin-bottom: -73px;
+    width: 704px;
+    margin-left: 30px;
+}
+
+.titulo-conteudo {
+    font-size: 31px;
+    font-variant: inherit;
+    font-weight: 800;
+	color: #854725;
+}
+
+.clase-conteudo {
+    color: black;
+    font-size: 16px;
+    height: 92px;
+    line-height: 30px;
+    width: 428px;
+    padding: 30px 13px ;
+}
+
+#mensagem-home {
+    background-image: url("images/funmeshome.png");
+    background-size: 418px 238px;
+    border-radius: 14px 14px 14px 14px;
+    color: black;
+    height: 92px;
+    line-height: 16px;
+    margin-left: 495px;
+    margin-top: -539px;
+    padding: 14px;
+    position: absolute;
+    width: 413px;
+    font-size: 14px;
+	padding-bottom: 25px;
+}
+
+#mensagem-conteudo {
+	background-image: url("images/funmes.png");
+    background-size: 418px 238px;
+    border-radius: 14px 14px 14px 14px;
+    color: black;
+    font-size: 14px;
+    height: 421px;
+    line-height: 16px;
+    margin-left: 75px;
+    margin-top: -609px;
+    padding: 14px;
+    position: absolute;
+    width: 853px;
+}
+
+#foot {
+    margin-top: 92px;
+    margin-left: -51px;
+}
+
+
+#tabela {
+    
+   margin-bottom: -11px;
+    margin-left: -16px;
+    margin-top: -76px;
+    width: 982px;
+    padding: 10px;
+
+}
+
+
+#pnld-main
+{
+	background: #FAFAFA;
+	margin: 0 auto;
+	font-size: 13px;
+	font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	width: 1024px;
+	min-height: 100%;
+	left: 0;
+	top: 0;
+	cursor: default;
+	overflow: hidden;
+}
+
+.maior {
+    width: 50%;
+	height: 50%;
+}
+
+table, ul.pnld-hmenu
+{
+   font-size: 13px;
+   font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.pnld-button
+{
+   border: 0;
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #B5B5B5;
+   border-width: 0;
+   padding:0 15px;
+   margin:0 auto;
+   height:28px;
+}
+
+.pnld-postcontent,
+.pnld-postheadericons,
+.pnld-postfootericons,
+.pnld-blockcontent,
+ul.pnld-vmenu a 
+{
+   text-align: left;
+}
+
+.pnld-postcontent,
+.pnld-postcontent li,
+.pnld-postcontent table,
+.pnld-postcontent a,
+.pnld-postcontent a:link,
+.pnld-postcontent a:visited,
+.pnld-postcontent a.visited,
+.pnld-postcontent a:hover,
+.pnld-postcontent a.hovered
+{
+   font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: left;
+   line-height: 175%;
+}
+
+.pnld-postcontent p
+{
+   margin: 13px 0;
+}
+
+.pnld-postcontent h1, .pnld-postcontent h1 a, .pnld-postcontent h1 a:link, .pnld-postcontent h1 a:visited, .pnld-postcontent h1 a:hover,
+.pnld-postcontent h2, .pnld-postcontent h2 a, .pnld-postcontent h2 a:link, .pnld-postcontent h2 a:visited, .pnld-postcontent h2 a:hover,
+.pnld-postcontent h3, .pnld-postcontent h3 a, .pnld-postcontent h3 a:link, .pnld-postcontent h3 a:visited, .pnld-postcontent h3 a:hover,
+.pnld-postcontent h4, .pnld-postcontent h4 a, .pnld-postcontent h4 a:link, .pnld-postcontent h4 a:visited, .pnld-postcontent h4 a:hover,
+.pnld-postcontent h5, .pnld-postcontent h5 a, .pnld-postcontent h5 a:link, .pnld-postcontent h5 a:visited, .pnld-postcontent h5 a:hover,
+.pnld-postcontent h6, .pnld-postcontent h6 a, .pnld-postcontent h6 a:link, .pnld-postcontent h6 a:visited, .pnld-postcontent h6 a:hover,
+.pnld-blockheader .t, .pnld-blockheader .t a, .pnld-blockheader .t a:link, .pnld-blockheader .t a:visited, .pnld-blockheader .t a:hover,
+.pnld-vmenublockheader .t, .pnld-vmenublockheader .t a, .pnld-vmenublockheader .t a:link, .pnld-vmenublockheader .t a:visited, .pnld-vmenublockheader .t a:hover,
+.pnld-headline, .pnld-headline a, .pnld-headline a:link, .pnld-headline a:visited, .pnld-headline a:hover,
+.pnld-slogan, .pnld-slogan a, .pnld-slogan a:link, .pnld-slogan a:visited, .pnld-slogan a:hover,
+.pnld-postheader, .pnld-postheader a, .pnld-postheader a:link, .pnld-postheader a:visited, .pnld-postheader a:hover
+{
+   font-size: 22px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 120%;
+}
+
+.pnld-postcontent a, .pnld-postcontent a:link
+{
+   font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.pnld-postcontent a:visited, .pnld-postcontent a.visited
+{
+   font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.pnld-postcontent  a:hover, .pnld-postcontent a.hover
+{
+	font-family: 'HelveticaNeueLT Std', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+	text-decoration: underline;
+	color: #000;
+	font-style: normal;
+}
+
+.pnld-postcontent h1
+{
+   color: #FFFFFF;
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h1
+{
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h1 a, .pnld-postcontent h1 a:link, .pnld-postcontent h1 a:hover, .pnld-postcontent h1 a:visited, .pnld-blockcontent h1 a, .pnld-blockcontent h1 a:link, .pnld-blockcontent h1 a:hover, .pnld-blockcontent h1 a:visited 
+{
+   font-size: 26px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h2
+{
+   color: #E8E8E8;
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h2
+{
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h2 a, .pnld-postcontent h2 a:link, .pnld-postcontent h2 a:hover, .pnld-postcontent h2 a:visited, .pnld-blockcontent h2 a, .pnld-blockcontent h2 a:link, .pnld-blockcontent h2 a:hover, .pnld-blockcontent h2 a:visited 
+{
+   font-size: 22px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h3
+{
+   color: #F4DAF6;
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h3 a, .pnld-postcontent h3 a:link, .pnld-postcontent h3 a:hover, .pnld-postcontent h3 a:visited, .pnld-blockcontent h3 a, .pnld-blockcontent h3 a:link, .pnld-blockcontent h3 a:hover, .pnld-blockcontent h3 a:visited 
+{
+   font-size: 20px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h4
+{
+   color: #DBF3FF;
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h4
+{
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h4 a, .pnld-postcontent h4 a:link, .pnld-postcontent h4 a:hover, .pnld-postcontent h4 a:visited, .pnld-blockcontent h4 a, .pnld-blockcontent h4 a:link, .pnld-blockcontent h4 a:hover, .pnld-blockcontent h4 a:visited 
+{
+   font-size: 18px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h5
+{
+   color: #DBF3FF;
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h5
+{
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h5 a, .pnld-postcontent h5 a:link, .pnld-postcontent h5 a:hover, .pnld-postcontent h5 a:visited, .pnld-blockcontent h5 a, .pnld-blockcontent h5 a:link, .pnld-blockcontent h5 a:hover, .pnld-blockcontent h5 a:visited 
+{
+   font-size: 15px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h6
+{
+   color: #F5FCFF;
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-blockcontent h6
+{
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.pnld-postcontent h6 a, .pnld-postcontent h6 a:link, .pnld-postcontent h6 a:hover, .pnld-postcontent h6 a:visited, .pnld-blockcontent h6 a, .pnld-blockcontent h6 a:link, .pnld-blockcontent h6 a:hover, .pnld-blockcontent h6 a:visited 
+{
+   font-size: 13px;
+   font-family: 'DIN Black', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #pnld-hmenu-bg, .pnld-sheet, .pnld-hmenu a, .pnld-vmenu a, .pnld-slidenavigator > a, .pnld-checkbox:before, .pnld-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #pnld-hmenu-bg, .pnld-sheet, .pnld-slidenavigator > a, .pnld-checkbox:before, .pnld-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 700px;
+   color: #FFFFFF;
+}
+
+.clearfix:before, .clearfix:after 
+{
+   width: 758px;
+   content: " ";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.cleared {
+   font: 0/0 serif;
+   clear: both;
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+}

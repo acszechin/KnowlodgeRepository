@@ -1,0 +1,83 @@
+/* Editora do Brasil*/
+
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.pnld-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.pnld-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#pnld-header-bg 
+{
+   display: none;
+}
+
+.pnld-content-layout, .pnld-content-layout-row, .pnld-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.pnld-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.pnld-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.pnld-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.pnld-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.pnld-postheadericons span{
+   zoom: 1;
+}
+.pnld-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.pnld-content 
+{
+   width: auto;
+   float:none;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<link rel="stylesheet" href="style/simples.css" type="text/css" />
+  </head>
+  <body>
+  	<div id="divPrincipal" class="center">
+  		<div id="divControlesNavegacao">
+  			<span id="capa"  class="controle" style="display:inherit">inicio</span>
+  			<span id="next"  class="controle" style="display:inherit">proxima</span>
+  			<span id="back"  class="controle" style="display:inherit">anterior</span>
+	    </div>
+  		
+  		<div id="divControlesZoom" >
+  			<span id="zoomOut" class="controle" >Zoom Out</span>
+	    	<span id="zoomFit" class="controle" >Fit</span>
+	    	<span id="zoomIn" class="controle" >Zoom In</span>
+  		</div>
+  		
+  		<div id="divControlesPaginacao">
+  			<span>Pagina</span>
+  			<span id="paginaAtual" class="controle, paginacao" ></span>
+  			<span>de</span>
+	    	<span id="qtdPaginas" class="controle, paginacao" ></span>
+  		</div>
+  		
+  		<div id="divConteudo">
+	    	<div id="divOED">
+	    		<a href="#divModalDialog" onclick="loadIFrame();" ><img id="iconeOED" src="images/link.png"/></a>
+			</div>
+			
+	    	<canvas id="canvasPagina" >
+	     	    Browser n��o suporta Canvas!!!
+	     	</canvas>
+     	</div>
+    </div>
+    
+    
+	
+	<div id="divModalDialog" class="modalDialog" >
+		<div id="divContainer">
+			<a href="#close" title="Close" class="close">X</a>
+			<a id="zoomIFrameIn" title="ZoomIn" class="zoomIFrameIn">Z In</a>
+			<a id="zoomIFrameOut" title="ZoomOut" class="zoomIFrameOut">Z Out</a>
+			<iframe src="" name="iframe_a" id="iframe_a" class="center">Browser n��o suporta iFrames!!!</iframe>
+		</div>
+	</div>
+	
+	<script src="js/simples.js"></script>
+  </body>
+</html>
